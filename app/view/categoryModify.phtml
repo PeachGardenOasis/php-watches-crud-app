@@ -1,0 +1,13 @@
+<br>
+<br>
+<br>
+<h1>Update Category</h1>
+
+<form action = "?page=categoryModify" method ="post">
+    
+    <!-- Get default values of current category based on ID -->
+    Name:<input type="text" name="catModName" value=<?php echo '"'.$categoryDefault[1].'"'?> maxlength="60"><br>
+    Category Description:<input type="text" name="catModDesc" value=<?php echo '"'.$categoryDefault[2].'"'?> maxlength="100"><br>
+
+    <input type="submit" name="catModSubmit" value="Make Changes">
+</form>

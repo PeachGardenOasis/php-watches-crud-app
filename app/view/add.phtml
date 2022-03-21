@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+<h1>Add Watch</h1>
+
+<form action = "?page=add" method ="post">
+    
+    <!-- If add is unsuccessful it keeps previous input as default-->
+    Category:<input type="text" name="addCategory" value=<?php if(isset($_SESSION['categoryToAdd'])){echo '"'.$_SESSION['categoryToAdd'].'"';}else{echo '"Category"';}?>><br>
+    Brand:<input type="text" name="addBrand" value=<?php if(isset($_SESSION['brandToAdd'])){echo '"'.$_SESSION['brandToAdd'].'"';}else{echo '"Brand"';}?>><br>
+    Name:<input type="text" name="addName" value=<?php if(isset($_SESSION['nameToAdd'])){echo '"'.$_SESSION['nameToAdd'].'"';}else{echo '"Name"';}?>><br>
+    Case Diameter:<input type="text" name="addDiameter" value=<?php if(isset($_SESSION['diameterToAdd'])){echo '"'.$_SESSION['diameterToAdd'].'"';}else{echo '"Diameter"';}?>><br>
+    Price:<input type="text" name="addPrice" value=<?php if(isset($_SESSION['priceToAdd'])){echo '"'.$_SESSION['priceToAdd'].'"';}else{echo '"Price"';}?>><br>
+    
+    <input type="submit" name="addSubmit" value="Add Item">
+
+</form>

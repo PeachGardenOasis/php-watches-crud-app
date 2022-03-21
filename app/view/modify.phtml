@@ -1,0 +1,17 @@
+<br>
+<br>
+<br>
+<h1>Update Watch</h1>
+
+<form action = "?page=modify" method ="post">
+    
+    <!-- Text Boxes with Default Values From Current Values -->
+    Brand:<input type="text" name="modBrand" value=<?php echo '"'.$modifyItem[2].'"'?>><br>
+    Name:<input type="text" name="modName" value=<?php echo '"'.$modifyItem[3].'"'?> maxlength="100"><br>
+    Case Diameter:<input type="text" name="modDiameter" value=<?php echo '"'.$modifyItem[4].'"'?>><br>
+    Price:<input type="text" name="modPrice" value=<?php echo '"'.$modifyItem[5].'"'?>><br>
+    Category:<input type="text" name="modCategory" value=<?php echo '"'.$modifyItem[1].'"'?>><br>
+    <input type="hidden" name = "id" value=<?php echo '"'.$modifyItem[0].'"'?>>
+    <input type="submit" name="modSubmit" value="Make Changes">
+
+</form>

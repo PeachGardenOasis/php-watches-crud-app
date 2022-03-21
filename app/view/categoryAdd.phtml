@@ -1,0 +1,13 @@
+<br>
+<br>
+<br>
+<h1>Add Category</h1>
+
+<form action = "?page=categoryAdd" method ="post">
+    
+    <!-- If add was unsuccessful keeps previous values inputted as defaults-->
+    Category Name:<input type="text" name="catAddName" value=<?php if(isset($_SESSION['catNameToAdd'])){echo '"'.$_SESSION['catNameToAdd'].'"';}else{echo '"Name"';}?> maxlength="60"><br>
+    Category Description:<input type="text" name="catAddDesc" value=<?php if(isset($_SESSION['catDescToAdd'])){echo '"'.$_SESSION['catDescToAdd'].'"';}else{echo '"Description"';}?> maxlength="100"><br>
+
+    <input type="submit" name="catAddSubmit" value="Add Category">
+</form>
